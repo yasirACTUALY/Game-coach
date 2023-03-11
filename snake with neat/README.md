@@ -1,0 +1,1 @@
+Making an ai that can play the snake game using neat for practice(from scratch)

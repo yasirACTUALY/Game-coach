@@ -1,0 +1,1 @@
+Creating a simple implemntation of the snake game
