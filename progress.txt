@@ -30,3 +30,4 @@ Current Tasks:
   Pytorch:
     Pytorch is a library that allows you to use different learning models and edit how they work or even create one from scratch:
     while it is very useful it is very difficult to learn and not very begginer friendly like alternative like keras
+
