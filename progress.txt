@@ -1,0 +1,32 @@
+So far we are looking for a learning model that could efficently take an 3D array representing the pixels on your screen and their color and proficently use that to learn the game
+For the reward system the user should be able to give it a location on the screen that shows the game score.
+Models tried so far:
+Neat: 
+  pros:
+    very fast 
+    very simple to use
+    Documented:
+      since it's very common there is alot of documentations on how to use it efficently making learning it and debugging very simple 
+   Cons:
+    doesn't function well on a big number of inputs(the 3D array of pixels ) 
+    not very versatile:
+      since we cant pass in the screen we would have to program the for each game simply as it cant read the screen reward
+PPO2(stable baselines version)
+    pros:
+      very versatile:
+        we can edit many of the variable such as the number of generations and learning rate
+      Documented:
+        since it's very common there is alot of documentations on how to use it efficently making learning it and debugging very simple 
+      Cons:
+        the models take a lot of space the more inputs you give(giving a 200*200 screen result in each model taking approximately 1.2 Gb of space each)
+        Slow to produce the model:
+          when given alot of inputs it takes a very long time to generate all the nodes and weights ( when given the 200*200 pixel screen it took 30 minutes just to generate each nueral network)
+        hard to debug:
+          since it takes a long time to create a model and learn you cant tell if you coded the model learning process well since you need to wait for half a day until you can determine if it is working well or not
+          
+
+Current Tasks:
+  Trying making a model using PY-torch.
+  Pytorch:
+    Pytorch is a library that allows you to use different learning models and edit how they work or even create one from scratch:
+    while it is very useful it is very difficult to learn and not very begginer friendly like alternative like keras
